@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>NashTech</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="loader" class="loader"></div>
+    <section>
+      <div id="main">
+        <div id="leftDiv">
+          <div id="sampleheading">
+            <h1 style="font-size: 2.5rem">Sample Heading</h1>
+            <!-- <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error,
+              et, aut cumque doloremque laboriosam qui nobis nam officia itaque,
+              temporas quas?
+            </p> -->
+            <div class="gridContainer" style="margin-top: 40px">
+              <div class="one">Grid Item 1. Lorem dolor sit.</div>
+              <div class="two">Grid Item 2. Dolor sit amet.</div>
+              <div class="three">Grid Item 3. Ipsum dolor.</div>
+            </div>
+          </div>
+        </div>
+        <div id="rightDiv">
+          <form class="login" id="login">
+            <h2><b>Create Account</b></h2>
+            <br />
+            <div class="field">
+              <label for="email"><b>Enter your email</b></label>
+
+              <input name="email" id="email" type="email" required />
+              <div
+                style="font-size: 0.7rem; color: red"
+                class="error-message"
+                id="emailError"
+              ></div>
+            </div>
+
+            <div class="field">
+              <label for="DOB"
+                ><b
+                  >Date Of Birth
+                  <span style="font-size: 0.7rem">(Optional)</span></b
+                ></label
+              ><br />
+              <input type="date" name="DOB" id="DOB" max="" />
+              <div
+                style="font-size: 0.7rem; color: red"
+                class="error-message"
+                id="dobError"
+              ></div>
+            </div>
+            <div class="field">
+              <label for="password"> <b>Choose a strong password </b></label>
+
+              <input name="password" type="password" id="password" required />
+              <div
+                style="font-size: 0.7rem; color: red"
+                class="error-message"
+                id="passError"
+              ></div>
+            </div>
+            <div class="field">
+              <p><b>Are you an agency od individual?</b></p>
+
+              <input
+                type="radio"
+                name="accType"
+                value="agency"
+                id="agency"
+                style="cursor: pointer"
+              />
+              <label for="agency" style="padding-right: 2rem">Agency</label>
+              <input
+                type="radio"
+                name="accType"
+                value="individual"
+                id="individual"
+                style="cursor: pointer"
+              />
+              <label for="individual">Individual</label>
+              <div
+                style="font-size: 0.7rem; color: red"
+                class="error-message"
+                id="accTypeError"
+              ></div>
+            </div>
+            <button
+              type="button"
+              style="
+                width: 12rem;
+                background-color: rgb(70, 170, 220);
+                width: 48%;
+                color: white;
+              "
+              class="btn"
+              onclick="console.log('submitted')"
+            >
+              <b>Submit</b>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
